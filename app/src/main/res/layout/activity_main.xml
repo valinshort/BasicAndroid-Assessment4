@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,7 +9,9 @@
     <TextView
         android:text="Basketball Player Registration"
         android:textColor="@android:color/black"
-        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:textSize="24sp"
         android:layout_marginTop="20dp"
         android:id="@+id/title_text"
@@ -19,35 +21,39 @@
     <EditText
         android:id="@+id/input_team"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:hint="Team"
-        android:layout_below="@id/title_text"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/input_number"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:hint="Number"
-        android:layout_below="@id/input_team"
+        app:layout_constraintTop_toBottomOf="@id/input_team"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/input_name"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:hint="Name"
-        android:layout_below="@id/input_number"
+        app:layout_constraintTop_toBottomOf="@id/input_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/button_add_player"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/input_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_name"
         android:text="Add Player"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -55,8 +61,9 @@
     <Button
         android:id="@+id/button_view_players"
         android:text="View Player List"
-        android:layout_alignParentBottom="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
