@@ -1,4 +1,4 @@
-package com.example.rodneytressler.week4assessmentkey;
+package com.example.rodneytressler.week4assessment;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

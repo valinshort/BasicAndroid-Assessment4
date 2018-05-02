@@ -1,4 +1,4 @@
-package com.example.rodneytressler.week4assessmentkey;
+package com.example.rodneytressler.week4assessment;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

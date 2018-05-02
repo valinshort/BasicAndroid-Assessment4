@@ -1,12 +1,8 @@
-package com.example.rodneytressler.week4assessmentkey;
+package com.example.rodneytressler.week4assessment;
 
-import android.content.Intent;
-import android.os.Parcelable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
     public static final String TAG = "PLAYER_LIST_TAG";
 
     @OnClick(R.id.button_add_player)
-    protected void onAddPlayerButtonClicked(View view) {
+    protected void onAddPlayerButtonClicked() {
 
     }
 
 
 
     @OnClick(R.id.button_view_players)
-    protected void onViewPlayersButtonClicked(View view) {
+    protected void onViewPlayersButtonClicked() {
 
     }
 
